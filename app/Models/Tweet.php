@@ -12,7 +12,8 @@ class Tweet extends Model
 
     protected $fillable = ['tweet'];
 
-    public function user(){
-        return $this->belongTo(User::class);
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }
